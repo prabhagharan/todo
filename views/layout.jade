@@ -1,0 +1,36 @@
+!!!
+html
+	head
+		link(rel="stylesheet", href="../js/libs//bootstrap/css/bootstrap.css")
+		link(rel="stylesheet", href="../js/libs/bootstrap/css/bootstrap-responsive.css")
+		link(rel="stylesheet", href="../js/libs/bootstrap/bootstrap-editable/css/bootstrap-editable.css")
+
+		script(src="../js/libs/jquery/jquery.min.js")
+		script(src="../js/libs/bootstrap/js/bootstrap.js")
+		script(src="../js/libs/bootstrap/bootstrap-editable/js/bootstrap-editable.js")
+
+		title
+			|2todo
+	body
+		div(class="navbar")
+			div(class="navbar-inner")
+				div(class="container")
+					a(class="btn btn-navbar", data-toggle="collapse", data-target=".nav-collapse")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					a(class="brand",href="#") 2todo 
+					div(class="nav-collapse collapse")
+						ul(class="nav pull-right")
+							li(class="dropdown") 
+								a(href="#", class="dropdown-toggle", data-toggle="dropdown") Projects
+									b(class="caret")
+								ul(class="dropdown-menu")
+									li
+										a(href="../logout") Logout
+
+		div(class = "row-fluid")
+			div(class="span1")
+			div(class ="span10")
+				block content
+			div(class="span1")

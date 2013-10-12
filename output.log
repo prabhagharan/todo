@@ -1,0 +1,10 @@
+info: socket.io started
+req.params.id=1 req.session.userIDundefined
+results - [object Object],[object Object],[object Object],[object Object],[object Object]
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/deek/LAB/nodeing/expressing/helloexpress/node_modules/mysql/lib/protocol/Protocol.js:73:13)
+    at Socket.onend (stream.js:79:10)
+    at Socket.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:920:16
+    at process._tickCallback (node.js:415:13)

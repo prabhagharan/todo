@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	script(src="../js/tasks.js")
+	ul(class="breadcrumb")
+		li 
+			a(href="../user") Projects List
+			span(class="divider") /
+		li(class="active") Project
+	div(class="row-fluid")
+		div(class="span8")
+			div(class="row-fluid")
+				div(class="span12")
+					div(id="project-details")
+					div(class="pull-left", id="project-edit-delete")
+					div(id="project-details-edit-form", class="hide")
+					<br><hr/>
+				div(class="span12", id="add-task-button")
+					p(class="text-center lead", style="border: 2px solid #ecebeb")
+						a(id="add-task", href="#")
+							|+ Add Task
+				div(id="add-project-form", class="span12 form-horizontal hide")
+					div(class="control-group")
+						input(type="text", placeholder="Project Name", class="input-xxlarge", id="new-projectname")
+					div(class="control-group")
+						textarea(rows='5', class="input-xxlarge", placeholder="Project Description", id="new-projectDesc")
+					div(class="control-group")
+						a(href="#", class="btn btn-primary save-new-task") Save
+						a(href="#", class="btn cancel-new-task") Cancel	
+				div(class="span12", id="project-tasks-list-outter")
+					div(class="accordion", id="project-tasks-list")
+		div(class="span4")

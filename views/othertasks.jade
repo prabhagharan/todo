@@ -1,0 +1,35 @@
+extends layout
+
+block content
+	script(src="../js/othertasks.js")
+	ul(class="breadcrumb")
+		li 
+			a(href="../user") Projects List
+			span(class="divider") /
+		li(class="active") Project
+	div(class="row-fluid")
+		div(class="span8")
+			div(class="row-fluid")
+				div(class="span12")
+					div(id="project-details")
+					div(class="pull-left", id="project-edit-delete")
+					div(id="project-details-edit-form", class="hide")
+					<br><hr/>
+				div(id="add-project-form", class="span12 form-horizontal hide")
+					div(class="control-group")
+						input(type="text", placeholder="Project Name", class="input-xxlarge", id="new-projectname")
+					div(class="control-group")
+						textarea(rows='5', class="input-xxlarge", placeholder="Project Description", id="new-projectDesc")
+					div(class="control-group")
+						a(href="#", class="btn btn-primary save-new-task") Save
+						a(href="#", class="btn cancel-new-task") Cancel	
+				div(class="span12", id="project-tasks-list-outter")
+					div(class="accordion", id="project-tasks-list")
+		div(class="span4")
+			div(class="row-fluid")
+				div(class="span5")
+					p 
+						button(class="btn btn-block btn-success", type="button") Fork It
+					p 
+						button(class="btn btn-block btn-primary", type="button") Follow It
+			div(class="span5")

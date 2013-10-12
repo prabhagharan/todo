@@ -1,0 +1,17 @@
+extends layout
+
+block content
+		script(src="../js/otherprojects.js")
+		ul(class="breadcrumb")
+			li(class="active") Projects List
+		div(class="row-fluid")
+			div(class="span2")
+			div(class="span8")
+				div(id="add-project-form", class="span12 hide")
+					div(class="input-append")
+						input(type="text", placeholder="Project Name", class="input-xxlarge", id="new-projectname")
+						button(class="btn btn-primary save-new-projectname", type="button") Save
+						button(class="btn cancel-new-projectname", type="button") Cancel
+				div(id="projects-list")
+				div(id="new-project-name")
+			div(class="span2")

@@ -1,0 +1,67 @@
+!!!
+html
+	head
+		link(rel="stylesheet", href="../js/libs//bootstrap/css/bootstrap.css")
+		link(rel="stylesheet", href="../js/libs/bootstrap/css/bootstrap-responsive.css")
+		link(rel="stylesheet", href="../js/libs/bootstrap/bootstrap-editable/css/bootstrap-editable.css")
+
+		script(src="../js/libs/jquery/jquery.min.js")
+		script(src="../js/libs/bootstrap/js/bootstrap.js")
+		script(src="../js/libs/bootstrap/bootstrap-editable/js/bootstrap-editable.js")
+		script(src="../js/login.js")
+
+		title
+			|2todo
+	body
+		div(class="navbar")
+			div(class="navbar-inner")
+				div(class="container")
+					a(class="btn btn-navbar", data-toggle="collapse", data-target=".nav-collapse")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					a(class="brand",href="#") 2todo 
+		div(class = "row-fluid")
+			div(class="span4")
+			div(class ="span4")
+				div(id="sign-in-form")
+					form(class="form-horizontal")
+						div(class="control-group")
+							label(class="control-label", for="inputEmail") Email
+							div(class="controls")
+								input(type="text", id="inputEmail", placeholder="Email")
+						div(class="control-group")
+							label(class="control-label", for="inputPassword") Password
+							div(class="controls")
+								input(type="password", id="inputPassword", placeholder="Password")
+						div(class="control-group")
+							div(class="controls")
+								label(class="checkbox") Remember me
+									input(type="checkbox")
+								div(class="btn-toolbar")
+										button(type="button", class="btn btn-success", id="sign-in-button") Sign In
+										button(type="button", class="btn btn-link", id="sign-up-link") Sign Up
+				div(id="sign-up-form", class="hide")
+					form(class="form-horizontal")
+						div(class="control-group")
+							label(class="control-label", for="inputEmail") Email
+							div(class="controls")
+								input(type="text", id="signup-inputEmail", placeholder="Email")
+						div(class="control-group")
+							label(class="control-label", for="inputName") Name
+							div(class="controls")
+								input(type="text", id="signup-inputName", placeholder="Name")
+						div(class="control-group")
+							label(class="control-label", for="signup-inputPassword") Password
+							div(class="controls")
+								input(type="password", id="signup-inputPassword", placeholder="Password")
+						div(class="control-group")
+							label(class="control-label", for="signup-confirmPassword") Confirm Password
+							div(class="controls")
+								input(type="password", id="signup-confirmPassword", placeholder="Confirm Password")
+						div(class="control-group")
+							div(class="controls")
+								div(class="btn-toolbar")
+										button(type="button", class="btn btn-primary", id="sign-up-button") Sign Up
+										button(type="button", class="btn btn-link", id="back-to-login-link") Back To Login
+			div(class="span4")
